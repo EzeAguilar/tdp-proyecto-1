@@ -55,7 +55,7 @@ public class SimplePresentationScreen extends JFrame {
 		labelImagen.setBounds(251, 21, 142, 90);
 		tabInformation.add(labelImagen);
 		
-		ImageIcon image = new ImageIcon(studentData.getPathPhoto());
+		ImageIcon image = new ImageIcon(Toolkit.getDefaultToolkit().getImage(SimplePresentationScreen.class.getResource(studentData.getPathPhoto())));
 	    Icon icon = new ImageIcon(image.getImage().getScaledInstance(labelImagen.getWidth(), labelImagen.getHeight(), Image.SCALE_DEFAULT));
 	    labelImagen.setIcon(icon);
 	    
